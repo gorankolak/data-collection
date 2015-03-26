@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <ul class="tab-list">
+            <li class="active"><a class="tab-control" href="#tab-1"><h3 id="add-tab-title">Add New Record</h3></a></li>
+            <li><a class="tab-control" href="#tab-2"><h3 id="overview-tab-title">Records Overview</h3></a></li>
+            <li><a class="tab-control" href="#tab-3"><h3 id="edit-tab-title">Edit Record</h3></a></li>
+        </ul><!-- End .tab-list -->
+
+        <div class="tab-panel active" id="tab-1">
+            <div class="inputs-wrap">
+                <div class="single-input">
+                    <label for="record-id" class="input-label">Record ID</label><input type="number" id="record-id" value="1">
+                </div>
+
+                <div class="single-input">
+                    <label for="artist" class="input-label">Artist *</label><input type="text" id="artist">
+                </div>
+
+                <div class="single-input">
+                    <label for="album" class="input-label">Album *</label><input type="text" id="album">
+                </div>
+
+                <div class="single-input">
+                    <label for="release" class="input-label">Release Year</label><input type="Number" id="release" min="1950" max="2015" placeholder="yyyy">
+                </div>
+
+                <div class="single-input">
+                    <label for="genre" class="input-label">Genre *</label>
+                    <select name="genre" id="genre">
+                        <option value="value1">Pop</option> 
+                        <option value="value2" selected>Rock</option>
+                        <option value="value3">Electronic</option>
+                        <option value="value4">Other</option>
+                    </select>
+                </div>
+            </div><!-- End .inputs-wrap -->
+
+            <div class="btn-add-wrap">
+                <button id="btn-add-new">Add New</button>
+            </div>
+            
+            <div class="cancel-wrap">
+                <p id="cancel-new">cancel</p>
+            </div>
+        </div><!-- End #tab-1 -->
+
+        <div class="tab-panel table-data" id="tab-2">
+            <table id="main-table" class="tablesorter">
+                <thead>
+                    <tr>
+                        <th>Record ID</th>
+                        <th>Artist</th>
+                        <th>Album</th>
+                        <th>Release Year</th>
+                        <th>Genre</th>         
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table><!-- End #main-table -->
+
+            <div class="highchart-wrapper" id="pie-graph">
+                <h3 class="graph-title">Genres Ratio</h3>
+                <table class="highchart" data-graph-container-before="1" data-graph-type="pie" style="display:none" data-graph-datalabels-enabled="1">
+                    <thead>
+                        <tr>
+                            <th>Genre</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div><!-- End .highchart-wrapper -->
+        </div><!-- End #tab-2 -->
+
+        <div class="tab-panel" id="tab-3">
+            <div class="inputs-wrap">
+                <div class="single-input">
+                    <label for="edit-record-id" class="input-label">Record ID</label><input type="number" id="edit-record-id">
+                </div>
+
+                <div class="single-input">
+                    <label for="edit-artist" class="input-label">Artist *</label><input type="text" id="edit-artist">
+                </div>
+
+                <div class="single-input">
+                    <label for="edit-album" class="input-label">Album *</label><input type="text" id="edit-album">
+                </div>
+
+                <div class="single-input">
+                    <label for="edit-release" class="input-label">Release Year</label><input type="Number" id="edit-release" min="1950" max="2015" placeholder="yyyy">
+                </div>
+
+                <div class="single-input">
+                    <label for="edit-genre" class="input-label">Genre *</label>
+                    <select name="genre" id="edit-genre">
+                        <option value="value1">Pop</option> 
+                        <option value="value2" selected>Rock</option>
+                        <option value="value3">Electronic</option>
+                        <option value="value4">Other</option>
+                    </select>
+                </div>
+            </div><!-- End .inputs-wrap -->
+
+            <div class="btn-add-wrap">
+                <button id="btn-save-changes">Save Changes</button>
+            </div>
+
+            <div class="cancel-wrap">
+                <p id="cancel-edit">cancel</p>
+            </div>
+        </div><!-- End #tab-3 -->
+
+    </div><!-- End .wrapper -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/jquery.highchartTable-min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

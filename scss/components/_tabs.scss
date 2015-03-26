@@ -1,0 +1,32 @@
+#add-tab-title, #edit-tab-title, #overview-tab-title {
+    text-transform: uppercase;
+}
+
+#edit-tab-title {
+    display: none;
+}
+
+.tab-list {
+    padding-left: 0;
+    li {
+        display: inline-block;
+        margin-right: 2em;
+    }
+}
+
+.tab-panel {
+    display: none;
+    margin-top: 3em;
+}
+
+.tab-panel:after {
+    @extend %clearfix;
+}
+
+.active {
+    display: block;
+}
+
+ul .active {
+    border-bottom: 3px solid $text-color1;
+}

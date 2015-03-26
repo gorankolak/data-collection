@@ -1,0 +1,39 @@
+button {
+    margin-top: 0.5em;  
+    background: $text-color1;
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+    color: $white-color;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+button:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 1px rgba(0, 0, 0, 0.26);
+}
+
+button:active {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 3px rgba(0, 0, 0, 0.26);
+}
+
+.btn-add-wrap {
+    float: right;
+}
+
+.btn-edit {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.cancel-wrap {
+    margin-right: 1em;
+    float: right;
+    color: $text-color1;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}

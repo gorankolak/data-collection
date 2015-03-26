@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+    border-radius: 2px;
+}
+
+th {
+    font-size: 14px;
+    padding: 1em;
+    padding-left: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+td {
+    padding: 0.5em;
+}
+
+td:last-child {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: $dark-white-color;
+}
