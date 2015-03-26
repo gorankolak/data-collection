@@ -1,0 +1,2 @@
+#Data Collection
+A simple web interface which collects user input data and stores it into a temporary container (HTML table). All collected data can be sorted for each column and edited. I have also included a Highcharts for displaying a certain data parts visually.
