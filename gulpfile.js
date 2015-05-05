@@ -12,6 +12,7 @@ gulp.task('styles', function() {
     return gulp.src(cssSrc)
         .pipe(changed(cssDest))
         .pipe(sass({
+            errLogToConsole: true,
             outputStyle: 'compressed',
             sourceComments: 'map'
         }))
