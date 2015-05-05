@@ -12,6 +12,9 @@
         display: inline-block;
         margin-right: 2em;
     }
+    li:hover {
+        border-bottom: 3px solid $lighter-text-color;
+    }
 }
 
 .tab-panel {
@@ -29,4 +32,12 @@
 
 ul .active {
     border-bottom: 3px solid $text-color1;
+}
+
+ul .active:hover {
+    border-bottom: 3px solid $text-color1;
+}
+
+.active h3 {
+    color: $text-color1;
 }
