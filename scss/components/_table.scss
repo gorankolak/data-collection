@@ -13,14 +13,13 @@ th {
 
 td {
     padding: 0.5em;
-}
-
-td:last-child {
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+    &:last-child {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;  
+    }
 }
 
 tbody tr:hover {

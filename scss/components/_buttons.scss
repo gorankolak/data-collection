@@ -9,14 +9,12 @@ button {
     outline: none;
     border: none;
     border-radius: 2px;
-}
-
-button:hover {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 1px rgba(0, 0, 0, 0.26);
-}
-
-button:active {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 3px rgba(0, 0, 0, 0.26);
+    &:hover {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 1px rgba(0, 0, 0, 0.26);
+    }
+    &:active {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 5px 3px rgba(0, 0, 0, 0.26);
+    }
 }
 
 .btn-add-wrap {

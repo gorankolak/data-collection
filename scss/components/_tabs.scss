@@ -11,33 +11,30 @@
     li {
         display: inline-block;
         margin-right: 2em;
-    }
-    li:hover {
-        border-bottom: 3px solid $lighter-text-color;
+        &:hover {
+           border-bottom: 3px solid $lighter-text-color; 
+        }
     }
 }
 
 .tab-panel {
     display: none;
     margin-top: 3em;
-}
-
-.tab-panel:after {
-    @extend %clearfix;
+    &:after {
+       @extend %clearfix; 
+    }
 }
 
 .active {
     display: block;
+    h3 {
+       color: $text-color1; 
+    }
 }
 
 ul .active {
     border-bottom: 3px solid $text-color1;
-}
-
-ul .active:hover {
-    border-bottom: 3px solid $text-color1;
-}
-
-.active h3 {
-    color: $text-color1;
+    &:hover {
+        border-bottom: 3px solid $text-color1;
+    }
 }
