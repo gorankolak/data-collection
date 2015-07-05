@@ -28,12 +28,6 @@ $(function() {
         counter++;
 
         $('#record-id').val(counter);
-
-        $('.btn-edit').on('click', function() {
-            $this =  $(this);
-            dataToEdit();
-            onlyEditTab();
-        });
     }
 
     // Takes data from table and sends it to the graph
@@ -186,6 +180,12 @@ $(function() {
             tableSorting();
             resetNewRecord();
         }
+    });
+
+    $('#main-table tbody').on('click', '.btn-edit', function() {
+            $this =  $(this);
+            dataToEdit();
+            onlyEditTab();
     });
 
     $('#btn-save-changes').on('click', function() {
